@@ -49,6 +49,9 @@ def predict():
     # Generate result message
     result = crop_dict.get(prediction[0], "Sorry, we could not determine the best crop to be cultivated with the provided data.")
 
+    if __name__ == "__main__":
+    app.run(debug=True)
+
     return render_template('index.html', result=result)
 
 # Run the app
